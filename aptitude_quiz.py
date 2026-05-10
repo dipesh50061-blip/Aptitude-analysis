@@ -156,3 +156,10 @@ else:
     print("Performance: needs improvement")
 
 print("Thanks for playing the quiz!")
+
+ play_again = input("\nDo you want to play again? (yes/no): ")
+    play_again = play_again.lower()
+
+    if play_again != "yes":
+        print("Goodbye!")
+        break
