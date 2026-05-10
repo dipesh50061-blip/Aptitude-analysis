@@ -146,16 +146,76 @@ while True:
 
     print("Current Score:", score)
 
-    print("\nQuiz Finished!")
-    print("Final Score:", score, "out of 10")
+    score = score + ask_questions(
+    "11",
+    "A boy walks north, then turns right. Which direction is he facing now?",
+    "South",
+    "East",
+    "West",
+    "North",
+    "B"
+    )
 
-    percentage = (score / 10) * 100
+    print("Current Score:", score)
+    
+    score = score + ask_questions(
+    "12",
+    "If all roses are flowers and some flowers fade quickly, are all roses guaranteed to fade quickly?",
+    "Yes",
+    "No",
+    "Maybe",
+    "Cannot Say",
+    "B"
+    )
+
+    print("Current Score:", score)
+
+    score = score + ask_questions(
+    "13",
+    "Unscramble the word: 'ETARW'",
+    "Water",
+    "Earth",
+    "Tiger",
+    "River",
+    "A"
+    )
+
+    print("Current Score:", score)
+
+    score = score + ask_questions(
+    "14",
+    "Unscramble the word: 'NOHTPY'",
+    "Java",
+    "Ruby",
+    "Python",
+    "Swift",
+    "C"
+    )
+
+    print("Current Score:", score)
+
+    score = score + ask_questions(
+    "15",
+    "Rahul walks 10 meters north, then turns right and walks 5 meters. He then turns right again and walks 10 meters. In which direction is Rahul now from his starting point?",
+    "North",
+    "South",
+    "East",
+    "West",
+    "C"
+    )
+
+    print("Current Score:", score)
+
+    print("\nQuiz Finished!")
+    print("Final Score:", score, "out of 15")
+
+    percentage = (score / 15) * 100
 
     print("Percentage:", round(percentage, 2), "%")
 
-    if score >= 8:
+    if score >=12:
         print("Performance: Excellent")
-    elif score >= 6:
+    elif score >= 10:
         print("Performance: Good")
     else:
         print("Performance: Needs Improvement")
