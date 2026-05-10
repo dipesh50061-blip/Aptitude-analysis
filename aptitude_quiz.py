@@ -226,5 +226,5 @@ while True:
     play_again = play_again.lower()
 
     if play_again != "yes":
-        print("Goodbye!")
+        print("Thanks for playing, Goodbye!")
         break
