@@ -67,7 +67,7 @@ cd aptitude-quiz-game
 ## Run the Python file
 
 ```bash
-python quiz.py
+aptitude quiz.py
 ```
 
 ---
